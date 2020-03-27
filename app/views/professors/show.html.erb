@@ -1,0 +1,7 @@
+<h2>Students assigned to: <%= @professor.name %></h2>
+
+<ul>
+  <% @professor.students.order(:name).each do |student| %>
+    <li><%= student.name %></li>
+  <% end %>
+</ul>
